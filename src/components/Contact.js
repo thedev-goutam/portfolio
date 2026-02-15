@@ -7,20 +7,20 @@ const Contact = () => {
     email: '',
     message: ''
   });
-  const [status, setStatus] = useState('');
+ // const [status, setStatus] = useState('');
 
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleChange = (e) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setStatus('Thanks — this demo form does not send emails. Replace with your backend endpoint.');
-    setTimeout(() => setStatus(''), 6000);
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   setStatus('Thanks — this demo form does not send emails. Replace with your backend endpoint.');
+  //   setTimeout(() => setStatus(''), 6000);
+  // };
 
   return (
     <section id="contact" className="contact-section">

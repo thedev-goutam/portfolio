@@ -77,7 +77,7 @@ const Projects = () => {
               <h3 className="project-title">{index+1}. {project.title}</h3>
               <p className="project-description">{project.description}</p>
               <div className="project-links">
-                <a href={project.liveLink} className="project-link primary" target='_blank'>
+                <a href={project.liveLink} className="project-link primary">
                   Live Demo
                 </a>
                 {/* <a href={project.githubLink} className="project-link secondary">
