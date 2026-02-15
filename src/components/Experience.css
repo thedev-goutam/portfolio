@@ -1,0 +1,117 @@
+.experience-section {
+  background: #f9fafb;
+  padding: 3rem 0;
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.experience-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 2.5rem;
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+.timeline-wrapper {
+  position: relative;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 2.5rem;
+  top: 0;
+  bottom: 0;
+  width: 0.125rem;
+  background: rgba(102,87,245,0.3);
+}
+
+.timeline-content {
+  padding-left: 5rem;
+  space-y: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -1.25rem;
+  top: 0.5rem;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background: white;
+  border: 4px solid #6657F5;
+}
+
+.timeline-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96));
+  box-shadow: 0 6px 20px rgba(12,15,25,0.06);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.timeline-period {
+  font-size: 0.875rem;
+  color: #6657F5;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-title {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-description {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.quick-facts {
+  padding: 1.5rem;
+}
+
+.facts-title {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.facts-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facts-list li {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

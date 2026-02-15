@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Goutam Nayek — Full‑Stack Web Developer</title>
+  <meta name="description" content="Goutam Nayek — Full‑Stack Web Developer. Laravel, React, Angular, Next.js, MySQL, PostgreSQL, MongoDB." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = {theme: {extend: {colors: {primaryStart: '#6657F5', primaryEnd: '#9A54FF', accent: '#42A5FF'}, boxShadow: {glass: '0 10px 30px rgba(102,87,245,0.12)'} }}}</script>
+  <style>
+    :root { --glass: rgba(255,255,255,0.06); }
+    html,body{font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;} 
+    .gradient-hero{background: linear-gradient(135deg, rgba(102,87,245,0.65), rgba(154,84,255,0.65)), url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900"><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="%236657F5" offset="0"/><stop stop-color="%239A54FF" offset="1"/></linearGradient></defs><rect width="100%" height="100%" fill="url(%23g)" opacity="0.06"/></svg>') center/cover no-repeat;}
+    .glass-card{background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,255,255,0.96)); box-shadow: 0 6px 20px rgba(12,15,25,0.06); border-radius: 12px;}
+    .glass-soft{background: rgba(255,255,255,0.03); backdrop-filter: blur(8px); border: 1px solid rgba(255,255,255,0.04);}
+    .btn-primary{background: linear-gradient(90deg,var(--tw-gradient-stops));}
+    .btn-primary {--tw-gradient-from:#6657F5; --tw-gradient-to:#9A54FF}
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-white">
+  <!-- NAV -->
+  <header class="w-full fixed top-0 z-40">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between backdrop-blur-md glass-soft">
+      <a href="#" class="font-semibold text-primaryStart">Portfolio</a>
+      <ul class="hidden md:flex gap-6 text-sm items-center">
+        <li><a href="#about" class="hover:text-primaryStart">About</a></li>
+        <li><a href="#skills" class="hover:text-primaryStart">Skills</a></li>
+        <li><a href="#work" class="hover:text-primaryStart">Projects</a></li>
+        <li><a href="#experience" class="hover:text-primaryStart">Experience</a></li>
+        <li><a href="#contact" class="hover:text-primaryStart">Contact</a></li>
+      </ul>
+      <a href="#contact" class="hidden md:inline-block px-4 py-2 rounded-lg text-sm font-medium text-white btn-primary bg-gradient-to-r from-primaryStart to-primaryEnd">Get In Touch</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="gradient-hero pt-28 pb-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div class="text-white">
+          <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">Hi, I’m <span class="text-yellow-300">Goutam</span> — a Full‑Stack Web Developer</h1>
+          <p class="mt-4 text-lg opacity-90">I build high-performance applications using <strong>Laravel, React, Angular</strong> and modern databases. 6+ years designing scalable, maintainable systems and elegant user interfaces.</p>
+          <div class="mt-6 flex gap-4">
+            <a href="#contact" class="px-5 py-2.5 rounded-lg text-sm font-semibold text-white btn-primary bg-gradient-to-r from-primaryStart to-primaryEnd shadow-lg">Hire Me</a>
+            <a href="#work" class="px-5 py-2.5 rounded-lg text-sm bg-white/20 backdrop-blur-sm text-white">View My Work</a>
+          </div>
+          <div class="mt-8 flex gap-3 items-center text-sm text-white/80">
+            <div class="flex items-center gap-2">
+              <svg width="18" height="18" fill="none" class="opacity-90" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg>
+              <span>Laravel • React • Angular • Next.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hidden lg:block relative">
+          <div class="absolute -left-10 -top-10 w-64 h-64 rounded-xl" style="background:linear-gradient(160deg,#42A5FF33,#9A54FF22); filter: blur(32px);"></div>
+          <div class="glass-card p-6 rounded-2xl">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0a2f2e3f6e4c" alt="mockup" class="rounded-xl w-full h-48 object-cover shadow-sm">
+            <h3 class="mt-4 font-semibold">Featured Project — E‑Commerce Platform</h3>
+            <p class="mt-2 text-sm text-slate-600">Full-stack e-commerce with payments, inventory, and analytics. Laravel + React + MySQL.</p>
+            <div class="mt-4 flex gap-2">
+              <a class="px-3 py-1 text-xs rounded-md bg-white/10">Live Demo</a>
+              <a class="px-3 py-1 text-xs rounded-md bg-white/10">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="grid lg:grid-cols-3 gap-10 items-start">
+      <div class="lg:col-span-2">
+        <h2 class="text-2xl font-semibold">About Me</h2>
+        <p class="mt-4 text-slate-600">I'm a full-stack web developer with over 6 years of experience building reliable, scalable, and beautifully crafted web applications. I love solving real-world problems through clean architecture, optimized performance, and modern UI/UX principles.</p>
+        <p class="mt-3 text-slate-600">I specialize in creating efficient, maintainable code and have worked with startups and enterprises to deliver end-to-end digital products.</p>
+
+        <div class="mt-8 grid sm:grid-cols-3 gap-4">
+          <div class="text-center p-4 glass-card">
+            <div class="text-3xl font-bold text-primaryStart">6+</div>
+            <div class="text-sm text-slate-600 mt-2">Years Experience</div>
+          </div>
+          <div class="text-center p-4 glass-card">
+            <div class="text-3xl font-bold text-primaryStart">50+</div>
+            <div class="text-sm text-slate-600 mt-2">Projects Completed</div>
+          </div>
+          <div class="text-center p-4 glass-card">
+            <div class="text-3xl font-bold text-primaryStart">8</div>
+            <div class="text-sm text-slate-600 mt-2">Technologies</div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="p-4 glass-soft rounded-xl">
+        <h3 class="font-semibold">Contact</h3>
+        <p class="mt-2 text-sm text-slate-600">Email: <a href="mailto:goutam@example.com" class="text-primaryStart">goutam@example.com</a></p>
+        <p class="mt-1 text-sm text-slate-600">Location: Raipur, Chhattisgarh</p>
+        <div class="mt-4">
+          <a href="#contact" class="block text-center px-4 py-2 rounded-md btn-primary text-white">Work With Me</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="bg-white/50 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold text-center">Technical Skills</h2>
+      <p class="text-center text-sm text-slate-500 mt-2">Frontend, Backend, Databases, and Tools I use to ship production-ready products.</p>
+
+      <div class="mt-8 grid sm:grid-cols-3 gap-6">
+        <div class="p-6 glass-card rounded-xl">
+          <h4 class="font-semibold">Backend Frameworks</h4>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">Laravel</span>
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">Node.js</span>
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">Express</span>
+          </div>
+        </div>
+
+        <div class="p-6 glass-card rounded-xl">
+          <h4 class="font-semibold">Frontend Frameworks</h4>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">React</span>
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">Angular</span>
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">Next.js</span>
+          </div>
+        </div>
+
+        <div class="p-6 glass-card rounded-xl">
+          <h4 class="font-semibold">Databases</h4>
+          <div class="mt-4 flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">MySQL</span>
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">PostgreSQL</span>
+            <span class="px-3 py-1 bg-primaryStart/10 text-primaryStart rounded-full text-xs">MongoDB</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / PROJECTS -->
+  <section id="work" class="max-w-6xl mx-auto px-6 py-16">
+    <h2 class="text-2xl font-semibold text-center">My Works</h2>
+    <p class="text-center text-sm text-slate-500 mt-2">Selected projects demonstrating full-stack capabilities.</p>
+
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <!-- Project Card -->
+      <article class="p-6 glass-card rounded-xl">
+        <img src="https://images.unsplash.com/photo-1526378720948-1b6a1b9f0b10?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=6f2d8b3e9fbd" alt="project" class="rounded-lg w-full h-40 object-cover">
+        <h3 class="mt-4 font-semibold">E-Commerce Platform</h3>
+        <p class="mt-2 text-sm text-slate-600">Full-stack e-commerce solution with payments, inventory, and admin dashboards. Laravel, React, MySQL.</p>
+        <div class="mt-4 flex gap-2">
+          <a class="px-3 py-1 text-xs rounded-md bg-primaryStart/10 text-primaryStart">Live Demo</a>
+          <a class="px-3 py-1 text-xs rounded-md bg-slate-100">GitHub</a>
+        </div>
+      </article>
+
+      <article class="p-6 glass-card rounded-xl">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b8c8d6e1d2b" alt="project" class="rounded-lg w-full h-40 object-cover">
+        <h3 class="mt-4 font-semibold">Task Management App</h3>
+        <p class="mt-2 text-sm text-slate-600">Collaborative task management with live updates, roles, and progress analytics. Next.js + MongoDB.</p>
+        <div class="mt-4 flex gap-2">
+          <a class="px-3 py-1 text-xs rounded-md bg-primaryStart/10 text-primaryStart">Live Demo</a>
+          <a class="px-3 py-1 text-xs rounded-md bg-slate-100">GitHub</a>
+        </div>
+      </article>
+
+      <article class="p-6 glass-card rounded-xl">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=1f8e7b6c3d2a" alt="project" class="rounded-lg w-full h-40 object-cover">
+        <h3 class="mt-4 font-semibold">CRM Dashboard</h3>
+        <p class="mt-2 text-sm text-slate-600">Customer analytics and workflow automation dashboards. Angular + PostgreSQL.</p>
+        <div class="mt-4 flex gap-2">
+          <a class="px-3 py-1 text-xs rounded-md bg-primaryStart/10 text-primaryStart">Live Demo</a>
+          <a class="px-3 py-1 text-xs rounded-md bg-slate-100">GitHub</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE TIMELINE -->
+  <section id="experience" class="bg-gray-50 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold text-center">Experience Highlights</h2>
+      <div class="mt-10 grid lg:grid-cols-2 gap-8 items-start">
+        <div class="relative">
+          <div class="absolute left-10 top-0 bottom-0 w-0.5 bg-primaryStart/30"></div>
+          <div class="space-y-8 pl-20">
+            <div class="relative">
+              <div class="absolute -left-5 top-2 w-3 h-3 rounded-full bg-white border-4 border-primaryStart"></div>
+              <div class="glass-card p-6 rounded-xl">
+                <div class="text-sm text-primaryStart font-semibold">2020 — Present</div>
+                <h4 class="mt-2 font-semibold">Senior Web Developer</h4>
+                <p class="mt-2 text-sm text-slate-600">Leading full stack projects using Laravel, React and modern databases. Built scalable applications serving 10k+ users.</p>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -left-5 top-2 w-3 h-3 rounded-full bg-white border-4 border-primaryStart"></div>
+              <div class="glass-card p-6 rounded-xl">
+                <div class="text-sm text-primaryStart font-semibold">2018 — Present</div>
+                <h4 class="mt-2 font-semibold">Frontend Specialist</h4>
+                <p class="mt-2 text-sm text-slate-600">Specialized in React and Angular development, focusing on responsive interfaces and modern UI patterns.</p>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -left-5 top-2 w-3 h-3 rounded-full bg-white border-4 border-primaryStart"></div>
+              <div class="glass-card p-6 rounded-xl">
+                <div class="text-sm text-primaryStart font-semibold">2017 — Present</div>
+                <h4 class="mt-2 font-semibold">Database Architect</h4>
+                <p class="mt-2 text-sm text-slate-600">Designed optimized schemas and performed performance tuning for MySQL, PostgreSQL, and MongoDB.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="p-6">
+          <h3 class="font-semibold">Quick Facts</h3>
+          <ul class="mt-4 space-y-3 text-sm text-slate-600">
+            <li>• Specialties: Scalable APIs, Component-driven UI, Database Optimization</li>
+            <li>• Tools: Docker, Git, CI/CD, Figma</li>
+            <li>• Open to: Remote work, Contract, Full-time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-16 bg-gradient-to-r from-primaryStart/10 to-primaryEnd/10">
+    <div class="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-10 items-start">
+      <div>
+        <h2 class="text-2xl font-semibold">Get In Touch</h2>
+        <p class="mt-3 text-slate-600">Let's work together. Whether you need a full-stack developer or want to discuss an idea, I'm open to new opportunities and collaborations.</p>
+        <div class="mt-6 p-6 glass-card rounded-xl">
+          <p class="text-sm text-slate-600">Email: <a href="mailto:goutam@example.com" class="text-primaryStart">goutam@example.com</a></p>
+          <p class="text-sm text-slate-600 mt-2">LinkedIn: <a href="#" class="text-primaryStart">/in/yourprofile</a></p>
+          <p class="text-sm text-slate-600 mt-2">GitHub: <a href="#" class="text-primaryStart">/yourusername</a></p>
+        </div>
+      </div>
+
+      <form class="p-6 glass-card rounded-xl" onsubmit="handleContact(event)">
+        <label class="block text-sm font-medium">Your Name</label>
+        <input required class="mt-2 w-full rounded-md p-3 border border-slate-200" placeholder="Your Name">
+
+        <label class="block text-sm font-medium mt-4">Your Email</label>
+        <input required type="email" class="mt-2 w-full rounded-md p-3 border border-slate-200" placeholder="you@example.com">
+
+        <label class="block text-sm font-medium mt-4">Message</label>
+        <textarea required class="mt-2 w-full rounded-md p-3 border border-slate-200" rows="5" placeholder="Tell me about your project"></textarea>
+
+        <div class="mt-4">
+          <button type="submit" class="px-4 py-2 rounded-md btn-primary text-white">Send Message</button>
+        </div>
+
+        <p id="formStatus" class="text-sm text-slate-500 mt-3 hidden"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 mt-12">
+    <div class="max-w-6xl mx-auto px-6 text-center text-sm text-slate-500">© <span id="year"></span> Goutam Nayek — Built with care. </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    function handleContact(e){
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      status.classList.remove('hidden');
+      status.textContent = 'Thanks — this demo form does not send emails. Replace with your backend endpoint.';
+      setTimeout(()=> status.classList.add('hidden'), 6000);
+    }
+  </script>
+</body>
+</html>
